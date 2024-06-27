@@ -8,13 +8,13 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
-}
+} */
 
 body {
   color: rgb(var(--foreground-rgb));
@@ -30,4 +30,76 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.hero-bg {
+  background: url("/images/hero.png") lightgray -58px -300px / 126.953% 128.409%
+    no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-gradient {
+  background: radial-gradient(
+    105.35% 94.12% at 107.12% -43.22%,
+    #e54f2e 0%,
+    #f8f3f1 100%
+  );
+  opacity: 0.1;
+}
+
+.blue-gradient {
+  background: radial-gradient(
+    134.24% 245.74% at 87.8% 242.7%,
+    #08b4e6 0%,
+    #f7f2f0 69.52%,
+    #fff 100%
+  );
+  box-shadow: 0px 243.793px 68.286px 0px rgba(0, 0, 0, 0),
+    0px 155.74px 62.296px 0px rgba(0, 0, 0, 0.01),
+    0px 87.454px 52.712px 0px rgba(0, 0, 0, 0.05),
+    0px 38.935px 38.935px 0px rgba(0, 0, 0, 0.09),
+    0px 9.584px 21.564px 0px rgba(0, 0, 0, 0.1);
+}
+
+.orange-gradient {
+  background: radial-gradient(
+    134.24% 245.74% at 87.8% 242.7%,
+    #e54f2e 0%,
+    #f7f2f0 69.52%,
+    #fff 100%
+  );
+  box-shadow: 0px 242.939px 68.047px 0px rgba(0, 0, 0, 0),
+    0px 155.194px 62.078px 0px rgba(0, 0, 0, 0.01),
+    0px 87.148px 52.527px 0px rgba(0, 0, 0, 0.05),
+    0px 38.799px 38.799px 0px rgba(0, 0, 0, 0.09),
+    0px 9.55px 21.488px 0px rgba(0, 0, 0, 0.1);
+}
+
+.green-gradient {
+  background: radial-gradient(
+    134.24% 245.74% at 87.8% 242.7%,
+    #2fc77a 0%,
+    #f7f2f0 69.52%,
+    #fff 100%
+  );
+  box-shadow: 0px 243.793px 68.286px 0px rgba(0, 0, 0, 0),
+    0px 155.74px 62.296px 0px rgba(0, 0, 0, 0.01),
+    0px 87.454px 52.712px 0px rgba(0, 0, 0, 0.05),
+    0px 38.935px 38.935px 0px rgba(0, 0, 0, 0.09),
+    0px 9.584px 21.564px 0px rgba(0, 0, 0, 0.1);
+}
+
+.pink-gradient {
+  background: radial-gradient(
+    134.24% 245.74% at 87.8% 242.7%,
+    #d344b0 0%,
+    #f7f2f0 69.52%,
+    #fff 100%
+  );
+  box-shadow: 0px 243.793px 68.286px 0px rgba(0, 0, 0, 0),
+    0px 155.74px 62.296px 0px rgba(0, 0, 0, 0.01),
+    0px 87.454px 52.712px 0px rgba(0, 0, 0, 0.05),
+    0px 38.935px 38.935px 0px rgba(0, 0, 0, 0.09),
+    0px 9.584px 21.564px 0px rgba(0, 0, 0, 0.1);
 }
