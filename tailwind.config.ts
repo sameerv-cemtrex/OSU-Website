@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       container: {
         center: true,
+        padding: "6.75rem",
       },
       colors: {
         black: "#2b2b2b",
@@ -20,7 +21,7 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       fontFamily: {
-        "grozen-medical": ["--grozen-medical"],
+        "grozen-medical": "var(--grozen-medical)",
       },
     },
   },
