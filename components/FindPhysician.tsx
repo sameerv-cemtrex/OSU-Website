@@ -5,9 +5,9 @@ import { useMediaQuery } from "react-responsive";
 const FindPhysician = () => {
   const isTablet = useMediaQuery({ query: "(min-width: 835px)" });
   return (
-    <div className="pt-[142px] pb-[90px] bg-white">
-      <div className="container lg:px-[6.75rem] h-full flex items-center sm:gap-10 lg:gap-[170px]">
-        <div className="w-[42%]">
+    <div className="py-14  sm:pt-[142px] sm:pb-[90px] bg-white">
+      <div className="container px-6 lg:px-[6.75rem] h-full sm:flex items-center sm:gap-10 lg:gap-[170px]">
+        <div className="sm:w-[42%]">
           <h4 className="text-[40px] font-bold font-grozen-medical leading-10 ">
             FIND A {isTablet ? "PRIMARY CARE PHYSICIAN" : "PCP"}
           </h4>
@@ -60,16 +60,16 @@ const FindPhysician = () => {
           </div>
         </div>
 
-        <div className="flex-1 grid grid-cols-3 grid-row-3">
+        <div className="flex-1 grid grid-cols-3 grid-row-3 mt-14 sm:mt-0">
           <img
             alt="physician 1 "
             src="/images/physician1.png"
-            className="w-[340px] h-[289px] rounded-[20px] row-span-2 row-start-1 col-span-2 col-start-2 object-cover object-center shadow-2xl shadow-black/50"
+            className="w-full h-[167px] sm:w-[340px] sm:h-[289px] rounded-[20px] row-span-2 row-start-1 col-span-2 col-start-2 object-cover object-center shadow-2xl shadow-black/50"
           />
           <img
             alt="physician 2 "
             src="/images/physician2.png"
-            className=" z-20 w-[340px] h-[289px] rounded-[20px] row-span-2 row-start-2 col-span-2 col-start-1 object-cover object-center shadow-2xl shadow-black/50"
+            className=" z-20 w-full h-[167px] sm:w-[340px] sm:h-[289px] rounded-[20px] row-span-2 row-start-2 col-span-2 col-start-1 object-cover object-center shadow-2xl shadow-black/50"
           />
         </div>
       </div>

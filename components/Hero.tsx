@@ -2,35 +2,40 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="min-h-screen pt-10 pb-[52px]">
+    <div className="min-h-screen pt-8 sm:pt-10 sm:pb-[52px]">
       <img
         src="/images/hero.png"
         alt="hero background image"
-        className="absolute top-0 left-0 h-fit w-full object-center -z-20 hero-gradient"
+        className="absolute top-0 left-0 h-[646px] sm:h-fit w-full object-cover object-center -z-20 hero-gradient"
       />
-      {/* <div className="absolute inset-0 hero-gradient -z-10 h-[110vh]" /> */}
-      <div className="container lg:px-[6.75rem] sm:h-[40vh] lg:h-[70vh] grid place-items-center relative">
+
+      <div className="container lg:px-[6.75rem]  h-[60vh] sm:h-[40vh] lg:h-[70vh] grid place-items-center relative">
         {/* Nav Logo */}
         <img
           src="/images/logo.svg"
-          className="absolute top-0 left-4 sm:left-10 xl:left-[108px] w-[200px]"
+          className="absolute top-0 left-4 sm:left-10 xl:left-[108px] w-1/2 sm:w-[200px]"
           alt="logo"
         />
 
         <div className="flex flex-col items-center">
-          <h1 className="font-grozen-medical font-bold sm:text-5xl lg:text-[56px]  sm: w-[90vw] lg:w-[70vw] leading-[60px] text-center font-">
+          <h1 className="font-grozen-medical font-bold text-[32px] leading-[38px] sm:text-5xl lg:text-[56px]  w-[95vw] lg:w-[70vw] sm:leading-[60px] text-center">
             <span className="text-[#E54F2E]">REVOLUTIONIZE</span> YOUR WELLNESS
             JOURNEY
           </h1>
-          <h3 className="text-[28px] leading-10 mt-4 text-center w-[670px] font-medium">
+
+          <h3 className="sm:visible hidden text-lg sm:text-[28px] leading-[26px] sm:leading-10 mt-4 text-center w-[90vw] lg:w-[670px] font-medium">
             Explore immersive experiences designed to <br /> enhance your mind,
             body, and overall well-being.
+          </h3>
+          <h3 className="sm:hidden text-lg leading-[26px] mt-4 text-center w-[90vw] font-medium">
+            Explore immersive experiences designed to enhance your mind, body,
+            and overall well-being.
           </h3>
         </div>
       </div>
 
       {/* Hero cards */}
-      <div className="container lg:px-[6.75rem] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-[152px">
+      <div className="container px-5 lg:px-[6.75rem] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         <div className="p-4 rounded-xl blue-gradient h-[360px]">
           <div className="rounded-2xl h-[148px] bg-[#202636]" />
           <h4 className="text-2xl mt-6 text-[#07A0CF] text-center font-semibold leading-[26px] font-grozen-medical uppercase">

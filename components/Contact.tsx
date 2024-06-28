@@ -2,18 +2,13 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div className="mx-6 min-[1440px]:container relative rounded-3xl px-[55px] pt-[46px] pb-6 lg:p-[105px] mt-[5.5rem] lg:mt-[7.5rem] bg-gradient-to-r from-[#151B2B] via-[#151B2B] to-[#E54F2E] flex items-center justify-end">
-      <img
-        src="/images/contact.png"
-        alt="contact-img"
-        className="absolute -left-24 lg:-left-10 bottom-0 w-[83%] lg:w-[60%] -scale-x-100 mirror rounded-[20px] object-cover object-center"
-      />
-      <div className="w-1/2">
-        <h4 className="font-grozen-medical text-white font-bold text-[40px] leading-[100%]">
+    <div className="mx-6 min-[1440px]:container relative rounded-3xl px-8 sm:px-[55px] pt-[46px] sm:pb-6 lg:p-[105px] mt-[5.5rem] lg:mt-[7.5rem] bg-gradient-to-r from-[#151B2B] via-[#151B2B] to-[#E54F2E] sm:flex items-center justify-end">
+      <div className="sm:w-1/2 flex flex-col items-center sm:items-start">
+        <h4 className="font-grozen-medical text-center sm:text-start text-white font-bold text-[32px] sm:text-[40px] leading-[100%]">
           NEED HELP?
         </h4>
 
-        <p className="text-lg text-white mt-6">
+        <p className="text-lg text-white text-center sm:text-start mt-6">
           Aliquam pulvinar vestibulum blandit. Donec sed nisl libero. Fusce
           dignissim luctus sem eu dapibus.
         </p>
@@ -25,6 +20,12 @@ const Contact = () => {
           CONTACT US
         </button>
       </div>
+
+      <img
+        src="/images/contact1.png"
+        alt="contact-img"
+        className="sm:absolute left-0 lg:left-14 bottom-0 w-[272px] h-[289px] mt-[49px] sm:mt-0 sm:h-fit sm:w-[356px] lg:w-[482px] rounded-[20px] object-cover object-center"
+      />
     </div>
   );
 };
