@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="container mt-[72px] mb-[112px] flex items-center justify-between">
+    <div className="container lg:px-[6.75rem] mt-[72px] mb-[112px] flex flex-col gap-6 lg:flex-row items-center justify-between">
       <img src="/images/logo.svg" alt="footer logo" className="w-[200px]" />
 
       <div className="flex items-center space-x-4 text-sm">

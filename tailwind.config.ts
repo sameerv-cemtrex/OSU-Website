@@ -10,7 +10,6 @@ const config: Config = {
     extend: {
       container: {
         center: true,
-        padding: "6.75rem",
       },
       colors: {
         black: "#2b2b2b",

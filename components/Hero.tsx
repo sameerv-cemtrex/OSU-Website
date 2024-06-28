@@ -9,7 +9,7 @@ const Hero = () => {
         className="absolute top-0 left-0 h-fit w-full object-center -z-20 hero-gradient"
       />
       {/* <div className="absolute inset-0 hero-gradient -z-10 h-[110vh]" /> */}
-      <div className="container h-[70vh] grid place-items-center relative">
+      <div className="container lg:px-[6.75rem] sm:h-[40vh] lg:h-[70vh] grid place-items-center relative">
         {/* Nav Logo */}
         <img
           src="/images/logo.svg"
@@ -18,7 +18,7 @@ const Hero = () => {
         />
 
         <div className="flex flex-col items-center">
-          <h1 className="font-grozen-medical font-bold pt72 text-[56px] w-[836px] leading-[60px] text-center font-">
+          <h1 className="font-grozen-medical font-bold sm:text-5xl lg:text-[56px]  sm: w-[90vw] lg:w-[70vw] leading-[60px] text-center font-">
             <span className="text-[#E54F2E]">REVOLUTIONIZE</span> YOUR WELLNESS
             JOURNEY
           </h1>
@@ -30,7 +30,7 @@ const Hero = () => {
       </div>
 
       {/* Hero cards */}
-      <div className="container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-[152px">
+      <div className="container lg:px-[6.75rem] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-[152px">
         <div className="p-4 rounded-xl blue-gradient h-[360px]">
           <div className="rounded-2xl h-[148px] bg-[#202636]" />
           <h4 className="text-2xl mt-6 text-[#07A0CF] text-center font-semibold leading-[26px] font-grozen-medical uppercase">

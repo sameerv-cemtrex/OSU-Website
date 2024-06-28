@@ -1,12 +1,15 @@
+"use client";
 import React from "react";
+import { useMediaQuery } from "react-responsive";
 
 const FindPhysician = () => {
+  const isTablet = useMediaQuery({ query: "(min-width: 835px)" });
   return (
     <div className="pt-[142px] pb-[90px] bg-white">
-      <div className="container h-full flex items-center gap-[170px]">
+      <div className="container lg:px-[6.75rem] h-full flex items-center sm:gap-10 lg:gap-[170px]">
         <div className="w-[42%]">
           <h4 className="text-[40px] font-bold font-grozen-medical leading-10 ">
-            FIND A PRIMARY CARE PHYSICIAN
+            FIND A {isTablet ? "PRIMARY CARE PHYSICIAN" : "PCP"}
           </h4>
           <p className="mt-6 text-lg font-normal leading-[150%]">
             Aliquam pulvinar vestibulum blandit. Donec sed nisl libero. Fusce

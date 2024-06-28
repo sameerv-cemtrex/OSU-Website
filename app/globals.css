@@ -145,6 +145,12 @@ body {
   stroke: var(--Color-Core-white, #fff);
   filter: drop-shadow(0px -1px 7px #07a0cf) drop-shadow(7px -4px 28px #08b4e6);
 }
+@media (max-width: 835px) {
+  .clear-space-area {
+    width: 380.751px;
+    height: 113.947px;
+  }
+}
 
 .take-breaks-shadow {
   background: radial-gradient(
