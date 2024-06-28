@@ -6,9 +6,9 @@ const Hero = () => {
       <img
         src="/images/hero.png"
         alt="hero background image"
-        className="absolute top-0 left-0 h-fit object-center -z-20"
+        className="absolute top-0 left-0 h-fit w-full object-center -z-20 hero-gradient"
       />
-      <div className="absolute inset-0 hero-gradient -z-10" />
+      {/* <div className="absolute inset-0 hero-gradient -z-10 h-[110vh]" /> */}
       <div className="container h-[70vh] grid place-items-center relative">
         {/* Nav Logo */}
         <img

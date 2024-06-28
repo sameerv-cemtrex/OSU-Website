@@ -45,7 +45,7 @@ body {
     #e54f2e 0%,
     #f8f3f1 100%
   );
-  opacity: 0.3;
+  opacity: 0.8;
 }
 
 .blue-gradient {
@@ -102,4 +102,78 @@ body {
     0px 87.454px 52.712px 0px rgba(0, 0, 0, 0.05),
     0px 38.935px 38.935px 0px rgba(0, 0, 0, 0.09),
     0px 9.584px 21.564px 0px rgba(0, 0, 0, 0.1);
+}
+
+.controller-dropshadow {
+  filter: drop-shadow(15px 11px 41px rgba(248, 109, 24, 0.37))
+    drop-shadow(61px 44px 75px rgba(248, 109, 24, 0.32))
+    drop-shadow(137px 98px 101px rgba(248, 109, 24, 0.19))
+    drop-shadow(243px 175px 120px rgba(248, 109, 24, 0.06))
+    drop-shadow(380px 273px 131px rgba(248, 109, 24, 0.01));
+}
+
+.dress-casual-shadow {
+  box-shadow: 223px 190px 82px 0px rgba(229, 80, 46, 0.01),
+    143px 122px 75px 0px rgba(229, 80, 46, 0.05),
+    80px 68px 63px 0px rgba(229, 80, 46, 0.16),
+    36px 30px 47px 0px rgba(229, 80, 46, 0.27),
+    9px 8px 26px 0px rgba(229, 80, 46, 0.31);
+}
+
+.getting-started-shadow {
+  border-radius: 20px;
+  background: radial-gradient(
+    107.79% 93.93% at 90.98% 84.4%,
+    #d344b0 0%,
+    rgba(211, 68, 176, 0) 52.09%
+  );
+  box-shadow: 0px 316px 89px 0px rgba(0, 0, 0, 0),
+    0px 202px 81px 0px rgba(0, 0, 0, 0.01),
+    0px 114px 68px 0px rgba(0, 0, 0, 0.05),
+    0px 51px 51px 0px rgba(0, 0, 0, 0.09), 0px 13px 28px 0px rgba(0, 0, 0, 0.1);
+}
+
+.clear-space-shadow {
+  box-shadow: 314px 202px 104px 0px rgba(0, 0, 0, 0),
+    201px 129px 95px 0px rgba(0, 0, 0, 0.01),
+    113px 73px 81px 0px rgba(0, 0, 0, 0.05),
+    50px 32px 60px 0px rgba(0, 0, 0, 0.09), 13px 8px 33px 0px rgba(0, 0, 0, 0.1);
+}
+
+.clear-space-area {
+  stroke-width: 2px;
+  stroke: var(--Color-Core-white, #fff);
+  filter: drop-shadow(0px -1px 7px #07a0cf) drop-shadow(7px -4px 28px #08b4e6);
+}
+
+.take-breaks-shadow {
+  background: radial-gradient(
+    102.45% 103.55% at 90.98% 84.4%,
+    #28a969 0%,
+    rgba(40, 169, 105, 0) 49.41%
+  );
+  box-shadow: 0px 316px 89px 0px rgba(0, 0, 0, 0),
+    0px 202px 81px 0px rgba(0, 0, 0, 0.01),
+    0px 114px 68px 0px rgba(0, 0, 0, 0.05),
+    0px 51px 51px 0px rgba(0, 0, 0, 0.09), 0px 13px 28px 0px rgba(0, 0, 0, 0.1);
+}
+
+.main-content-top-gradient {
+  border-radius: 24px;
+  background: radial-gradient(
+    134.24% 245.74% at 87.8% 242.7%,
+    #e54f2e 0%,
+    transparent 69.52%
+  );
+  height: 476px;
+}
+
+.main-content-bottom-gradient {
+  border-radius: 24px;
+  background: radial-gradient(
+    134.24% 245.74% at 87.8% 242.7%,
+    #08b4e6 0%,
+    transparent 69.52%
+  );
+  height: 476px;
 }

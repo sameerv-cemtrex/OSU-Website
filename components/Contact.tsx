@@ -2,11 +2,11 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div className="mx-6 relative rounded-3xl p-[105px] mt-[120px] bg-gradient-to-r from-[#151B2B] via-[#151B2B] to-[#E54F2E] flex items-center justify-end">
+    <div className="mx-6 min-[1440px]:container relative rounded-3xl p-[105px] mt-[7.5rem] bg-gradient-to-r from-[#151B2B] via-[#151B2B] to-[#E54F2E] flex items-center justify-end">
       <img
         src="/images/contact.png"
         alt="contact-img"
-        className="absolute -left-10 bottom-0 w-[60%] -scale-x-100 mirror rounded-[20px] object-cover object-center"
+        className="absolute -left-10 bottom-0  w-[60%] -scale-x-100 mirror rounded-[20px] object-cover object-center"
       />
       <div className="w-1/2">
         <h4 className="font-grozen-medical text-white font-bold text-[40px] leading-[100%]">
@@ -20,7 +20,7 @@ const Contact = () => {
 
         <button
           type="button"
-          className="bg-[#E54F2E] mt-10 text-white text-lg leading-[19.8pxs] font-grozen-medical font-medium p-6 rounded-lg active:scale-95 active:bg-orange-600 ease-in-out duration-100"
+          className="bg-[#E54F2E] mt-10 z-10 relative text-white text-lg leading-[19.8pxs] font-grozen-medical font-medium p-6 rounded-lg active:scale-95 active:bg-orange-600 ease-in-out duration-100"
         >
           CONTACT US
         </button>
