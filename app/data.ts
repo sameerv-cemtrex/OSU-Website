@@ -4,7 +4,7 @@ export const heroBanner = {
   subtitle:
     "Explore immersive experiences designed to enhance your mind, body, and overall well-being.",
   subtitleWithBreak:
-    "Explore immersive experiences designed to enhance your mind, body, and overall well-being.",
+    "Explore immersive experiences designed to <br /> enhance your mind, body, and overall well-being.",
   heroImage: "/images/hero.png",
   logo: "/images/logo.svg",
 };
