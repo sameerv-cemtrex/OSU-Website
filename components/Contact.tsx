@@ -1,5 +1,7 @@
+"use client";
 import { contact } from "@/app/data";
 import React from "react";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   return (
@@ -21,7 +23,14 @@ const Contact = () => {
         </button>
       </div>
 
-      <img
+      <motion.img
+        initial={{ opacity: 0, y: 300 }}
+        whileInView={{
+          opacity: 1,
+          y: 0,
+          transition: { duration: 0.75, type: "spring" },
+        }}
+        viewport={{ once: true }}
         src={contact.image}
         alt="contact-img"
         className="sm:absolute left-0 lg:left-14 bottom-0 w-[272px] h-[289px] mt-[49px] sm:mt-0 sm:h-fit sm:w-[356px] lg:w-[482px] rounded-[20px] object-cover object-center"

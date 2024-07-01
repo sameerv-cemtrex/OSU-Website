@@ -2,6 +2,7 @@
 import { primaryPhysician } from "@/app/data";
 import React from "react";
 import { useMediaQuery } from "react-responsive";
+import { motion } from "framer-motion";
 
 const FindPhysician = () => {
   const isTablet = useMediaQuery({ query: "(min-width: 1024px)" });
@@ -61,12 +62,24 @@ const FindPhysician = () => {
         </div>
 
         <div className="flex-1 grid grid-cols-3 grid-row-3 mt-14 sm:mt-0">
-          <img
+          <motion.img
+            initial={{ opacity: 0 }}
+            whileInView={{
+              opacity: 1,
+              transition: { delay: 1, duration: 0.75 },
+            }}
+            viewport={{ once: true }}
             alt="physician 1 "
             src={primaryPhysician.image1}
             className="w-full h-[167px] sm:w-[340px] sm:h-[289px] rounded-[20px] row-span-2 row-start-1 col-span-2 col-start-2 object-cover object-center shadow-2xl shadow-black/50"
           />
-          <img
+          <motion.img
+            initial={{ opacity: 0 }}
+            whileInView={{
+              opacity: 1,
+              transition: { delay: 1.75, duration: 0.75 },
+            }}
+            viewport={{ once: true }}
             alt="physician 2 "
             src={primaryPhysician.image2}
             className=" z-20 w-full h-[167px] sm:w-[340px] sm:h-[289px] rounded-[20px] row-span-2 row-start-2 col-span-2 col-start-1 object-cover object-center shadow-2xl shadow-black/50"

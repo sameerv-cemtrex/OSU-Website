@@ -1,5 +1,7 @@
+"use client";
 import { mainContent } from "@/app/data";
 import React from "react";
+import { motion } from "framer-motion";
 
 const MainContent = () => {
   return (
@@ -13,12 +15,29 @@ const MainContent = () => {
         </div>
 
         <div className="flex-1 relative mt-10 sm:mt-0">
-          <img
+          <motion.img
+            initial={{ opacity: 0, y: 300 }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+              transition: { duration: 0.75, type: "tween" },
+            }}
+            viewport={{ once: true }}
             src={mainContent[0].image}
             alt="main-content-img"
             className="w-full xl:w-[460px] h-[235px] lg:h-[320px] rounded-[20px] object-cover object-center -scale-x-100"
           />
-          <div className="absolute top-0 left-0 z-10 w-full xl:w-[460px] h-[235px] lg:h-[320px] rounded-[20px] getting-started-shadow -scale-x-100" />
+          <motion.div
+            initial={{
+              opacity: 0,
+            }}
+            whileInView={{
+              opacity: 1,
+              transition: { delay: 2.5, duration: 0.5, type: "tween" },
+            }}
+            viewport={{ once: true }}
+            className="absolute top-0 left-0 z-10 w-full xl:w-[460px] h-[235px] lg:h-[320px] rounded-[20px] getting-started-shadow -scale-x-100"
+          />
         </div>
       </div>
 
@@ -31,12 +50,26 @@ const MainContent = () => {
         </div>
 
         <div className="flex-1 relative mt-10 sm:mt-0">
-          <img
+          <motion.img
+            initial={{ opacity: 0, y: 300 }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+              transition: { delay: 1, duration: 0.75, type: "tween" },
+            }}
+            viewport={{ once: true }}
             src={mainContent[1].image}
             alt="main-content-img"
             className="w-full lg:w-[460px] h-[253px] lg:h-[320px] rounded-[20px] object-cover object-center clear-space-shadow"
           />
-          <img
+          <motion.img
+            initial={{ y: 100, scale: 0 }}
+            whileInView={{
+              y: 0,
+              scale: 1,
+              transition: { delay: 1.75, duration: 0.3, type: "tween" },
+            }}
+            viewport={{ once: true }}
             alt="clear space area overlay"
             src="/images/clear-space-area.svg"
             className="absolute z-10 left-[34px] sm:left-[50px] lg:left-[100px] -bottom-[14.5px] lg:-bottom-[40.5px] clear-space-area"
@@ -53,13 +86,36 @@ const MainContent = () => {
         </div>
 
         <div className="flex-1 mt-20 sm:mt-0">
-          <div className="relative w-full lg:w-[460px] h-[253px] lg:h-[320px] dress-casual-shadow rounded-[20px] bg-gradient-radial to bottom from-[#F7F2F0]  to-[#E54F2E]">
-            <img
+          <motion.div
+            initial={{ opacity: 0, y: 300 }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+              transition: { delay: 1, duration: 0.75, type: "tween" },
+            }}
+            viewport={{ once: true }}
+            className="relative w-full lg:w-[460px] h-[253px] lg:h-[320px] dress-casual-shadow rounded-[20px] bg-gradient-radial to bottom from-[#F7F2F0]  to-[#E54F2E]"
+          >
+            <motion.img
+              initial={{ scale: 0, y: 300, x: "-50%" }}
+              whileInView={{
+                scale: 1,
+                y: 0,
+                x: "-50%",
+              }}
+              transition={{
+                delay: 1,
+                type: "spring",
+                stiffness: 300,
+                damping: 20,
+                duration: 0.7,
+              }}
+              viewport={{ once: true }}
               src={mainContent[2].image}
               alt="main-content-img"
               className="h-[145%] absolute bottom-0 left-[50%] -translate-x-[50%]"
             />
-          </div>
+          </motion.div>
         </div>
       </div>
 
@@ -72,12 +128,27 @@ const MainContent = () => {
         </div>
 
         <div className="flex-1 relative mt-10 sm:mt-0">
-          <img
+          <motion.img
+            initial={{ opacity: 0, y: 300 }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+              transition: { duration: 0.74, type: "just" },
+            }}
+            viewport={{ once: true }}
             src={mainContent[3].image}
             alt="main-content-img"
             className="w-full lg:w-[460px] h-[253px] lg:h-[320px] rounded-[20px] object-cover object-center"
           />
-          <div className="absolute top-0 left-0 w-full lg:w-[460px] h-[253px] lg:h-[320px] rounded-[24px] take-breaks-shadow  z-10" />
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{
+              opacity: 1,
+              transition: { delay: 2.5, duration: 0.75, type: "tween" },
+            }}
+            viewport={{ once: true }}
+            className="absolute top-0 left-0 w-full lg:w-[460px] h-[253px] lg:h-[320px] rounded-[24px] take-breaks-shadow  z-10"
+          />
         </div>
       </div>
 
@@ -90,7 +161,14 @@ const MainContent = () => {
         </div>
 
         <div className="flex-1 mt-10 sm:mt-0">
-          <img
+          <motion.img
+            initial={{ opacity: 0, scale: 0 }}
+            whileInView={{
+              opacity: 1,
+              scale: 1,
+              transition: { delay: 0.5, duration: 0.75, type: "tween" },
+            }}
+            viewport={{ once: true }}
             src={mainContent[4].image}
             alt="main-content-img"
             className="w-full lg:w-[460px] h-[235px] lgh-[320px] rounded-[20px] object-cover object-top mix-blend-multiply controller-dropshadow"
