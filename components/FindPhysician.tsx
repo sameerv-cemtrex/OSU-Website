@@ -3,10 +3,10 @@ import React from "react";
 import { useMediaQuery } from "react-responsive";
 
 const FindPhysician = () => {
-  const isTablet = useMediaQuery({ query: "(min-width: 835px)" });
+  const isTablet = useMediaQuery({ query: "(min-width: 1024px)" });
   return (
     <div className="py-14  sm:pt-[142px] sm:pb-[90px] bg-white">
-      <div className="container px-6 lg:px-[6.75rem] h-full sm:flex items-center sm:gap-10 lg:gap-[170px]">
+      <div className="container px-6 xl:px-[6.75rem] h-full sm:flex items-center sm:gap-10 lg:gap-[170px]">
         <div className="sm:w-[42%]">
           <h4 className="text-[40px] font-bold font-grozen-medical leading-10 ">
             FIND A {isTablet ? "PRIMARY CARE PHYSICIAN" : "PCP"}

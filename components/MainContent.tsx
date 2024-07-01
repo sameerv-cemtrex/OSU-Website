@@ -18,9 +18,9 @@ const MainContent = () => {
           <img
             src="/images/main-1.png"
             alt="main-content-img"
-            className="w-full lg:w-[460px] h-[235px] lg:h-[320px] rounded-[20px] object-cover object-center -scale-x-100"
+            className="w-full xl:w-[460px] h-[235px] lg:h-[320px] rounded-[20px] object-cover object-center -scale-x-100"
           />
-          <div className="absolute top-0 left-0 z-10 w-full lg:w-[460px] h-[235px] lg:h-[320px] rounded-[20px] getting-started-shadow -scale-x-100" />
+          <div className="absolute top-0 left-0 z-10 w-full xl:w-[460px] h-[235px] lg:h-[320px] rounded-[20px] getting-started-shadow -scale-x-100" />
         </div>
       </div>
 

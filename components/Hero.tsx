@@ -35,8 +35,8 @@ const Hero = () => {
       </div>
 
       {/* Hero cards */}
-      <div className="container px-5 lg:px-[6.75rem] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-        <div className="p-4 rounded-xl blue-gradient h-[360px]">
+      <div className="container px-5 xl:px-[6.75rem] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="p-4 rounded-xl blue-gradient h-full min-h-[360px]">
           <div className="rounded-2xl h-[148px] bg-[#202636]" />
           <h4 className="text-2xl mt-6 text-[#07A0CF] text-center font-semibold leading-[26px] font-grozen-medical uppercase">
             Digestive Harmony
@@ -47,7 +47,7 @@ const Hero = () => {
           </p>
         </div>
 
-        <div className="p-4 rounded-xl orange-gradient h-[360px]">
+        <div className="p-4 rounded-xl orange-gradient h-full min-h-[360px]">
           <div className="rounded-2xl h-[148px] bg-[#202636]" />
           <h4 className="text-2xl mt-6 text-[#E54F2E] text-center font-semibold leading-[26px] font-grozen-medical uppercase">
             STRETCH & STRENGTHEN
@@ -57,7 +57,7 @@ const Hero = () => {
           </p>
         </div>
 
-        <div className="p-4 rounded-xl green-gradient h-[360px]">
+        <div className="p-4 rounded-xl green-gradient h-full min-h-[360px]">
           <div className="rounded-2xl h-[148px] bg-[#202636]" />
           <h4 className="text-2xl mt-6 text-[#28A969] text-center font-semibold leading-[26px] font-grozen-medical uppercase">
             SMART SHOPPER
@@ -68,7 +68,7 @@ const Hero = () => {
           </p>
         </div>
 
-        <div className="p-4 rounded-xl pink-gradient h-[360px]">
+        <div className="p-4 rounded-xl pink-gradient h-full min-h-[360px]">
           <div className="rounded-2xl h-[148px] bg-[#202636]" />
           <h4 className="text-2xl mt-6 text-[#D344B0] text-center font-semibold leading-[26px] font-grozen-medical uppercase">
             BREATHE EASY
