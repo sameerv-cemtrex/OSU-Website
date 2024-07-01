@@ -73,8 +73,9 @@ const Hero = () => {
         viewport={{ once: true }}
         className="container px-5 xl:px-[6.75rem] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4"
       >
-        {heroCards.map((card) => (
+        {heroCards.map((card, index) => (
           <div
+            key={index}
             className={cn(
               "p-4 rounded-xl h-full min-h-[360px]",
               `${card.colorOverlay[0]}-gradient`

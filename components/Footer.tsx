@@ -8,8 +8,8 @@ const Footer = () => {
       <img src={footer.logo} alt="footer logo" className="w-[200px]" />
 
       <div className="sm:flex items-center text-center space-x-4 space-y-4 sm:space-y-0 text-sm">
-        {footer.links.map((link) => (
-          <Link href={link.url}>
+        {footer.links.map((link, index) => (
+          <Link href={link.url} key={index}>
             <p className="underline underline-offset-2">{link.text}</p>
           </Link>
         ))}
