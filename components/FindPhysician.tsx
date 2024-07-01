@@ -1,4 +1,5 @@
 "use client";
+import { primaryPhysician } from "@/app/data";
 import React from "react";
 import { useMediaQuery } from "react-responsive";
 
@@ -12,8 +13,7 @@ const FindPhysician = () => {
             FIND A {isTablet ? "PRIMARY CARE PHYSICIAN" : "PCP"}
           </h4>
           <p className="mt-6 text-lg font-normal leading-[150%]">
-            Aliquam pulvinar vestibulum blandit. Donec sed nisl libero. Fusce
-            dignissim luctus sem eu dapibus.
+            {primaryPhysician.subtitle}
           </p>
 
           <div className="mt-10">
@@ -37,9 +37,9 @@ const FindPhysician = () => {
 
           <div className="bg-[#F8F3F1] rounded p-3 ">
             <p className="font-medium">
-              Aliquam pulvinar vestibulum blandit. Donec sed nisl libero.{" "}
+              {primaryPhysician.linkText1}
               <a
-                href="#"
+                href={primaryPhysician.link1}
                 className="text-[#E54F2E] underline underline-offset-2"
               >
                 Go to Website
@@ -49,9 +49,9 @@ const FindPhysician = () => {
 
           <div className="bg-[#F8F3F1] rounded p-3 mt-2">
             <p className="font-medium">
-              Aliquam pulvinar vestibulum blandit. Donec sed nisl libero.{" "}
+              {primaryPhysician.linkText2}
               <a
-                href="#"
+                href={primaryPhysician.link2}
                 className="text-[#E54F2E] underline underline-offset-2"
               >
                 Go to Website
@@ -63,12 +63,12 @@ const FindPhysician = () => {
         <div className="flex-1 grid grid-cols-3 grid-row-3 mt-14 sm:mt-0">
           <img
             alt="physician 1 "
-            src="/images/physician1.png"
+            src={primaryPhysician.image1}
             className="w-full h-[167px] sm:w-[340px] sm:h-[289px] rounded-[20px] row-span-2 row-start-1 col-span-2 col-start-2 object-cover object-center shadow-2xl shadow-black/50"
           />
           <img
             alt="physician 2 "
-            src="/images/physician2.png"
+            src={primaryPhysician.image2}
             className=" z-20 w-full h-[167px] sm:w-[340px] sm:h-[289px] rounded-[20px] row-span-2 row-start-2 col-span-2 col-start-1 object-cover object-center shadow-2xl shadow-black/50"
           />
         </div>

@@ -1,3 +1,4 @@
+import { mainContent } from "@/app/data";
 import React from "react";
 
 const MainContent = () => {
@@ -6,17 +7,14 @@ const MainContent = () => {
       <div className="sm:flex items-center gap-16 lg:gap-20">
         <div className="flex-1 space-y-6">
           <h4 className="font-grozen-medical font-bold text-[40px] lg:text-5xl leading-[100%]">
-            GETTING STARTED
+            {mainContent[0].title}
           </h4>
-          <p className="text-lg font-medium">
-            Vestibulum eu quam nec neque pellentesque efficitur id eget nisl.
-            Proin porta est convallis lacus bl
-          </p>
+          <p className="text-lg font-medium">{mainContent[0].subtitle}</p>
         </div>
 
         <div className="flex-1 relative mt-10 sm:mt-0">
           <img
-            src="/images/main-1.png"
+            src={mainContent[0].image}
             alt="main-content-img"
             className="w-full xl:w-[460px] h-[235px] lg:h-[320px] rounded-[20px] object-cover object-center -scale-x-100"
           />
@@ -27,17 +25,14 @@ const MainContent = () => {
       <div className="sm:flex flex-row-reverse items-center gap-16 lg:gap-20">
         <div className="flex-1 space-y-6">
           <h4 className="font-grozen-medical font-bold text-[32px] lg:text-5xl leading-[100%]">
-            CLEAR SOME SPACE
+            {mainContent[1].title}
           </h4>
-          <p className="text-lg font-medium">
-            Aliquam pulvinar vestibulum blandit. Donec sed nisl libero. Fusce
-            dignissim luctus sem eu dapibus. P
-          </p>
+          <p className="text-lg font-medium">{mainContent[1].subtitle}</p>
         </div>
 
         <div className="flex-1 relative mt-10 sm:mt-0">
           <img
-            src="/images/main-2.png"
+            src={mainContent[1].image}
             alt="main-content-img"
             className="w-full lg:w-[460px] h-[253px] lg:h-[320px] rounded-[20px] object-cover object-center clear-space-shadow"
           />
@@ -52,18 +47,15 @@ const MainContent = () => {
       <div className="sm:flex items-center gap-16 lg:gap-20">
         <div className="flex-1 space-y-6">
           <h4 className="font-grozen-medical font-bold text-[32px] lg:text-5xl leading-[100%]">
-            DRESS CASUAL
+            {mainContent[2].title}
           </h4>
-          <p className="text-lg font-medium">
-            Donec sed erat ut magna suscipit mattis. Aliquam erat volutpat.
-            Morbi in orci risus. Donec pretium f.
-          </p>
+          <p className="text-lg font-medium">{mainContent[2].subtitle}</p>
         </div>
 
         <div className="flex-1 mt-20 sm:mt-0">
           <div className="relative w-full lg:w-[460px] h-[253px] lg:h-[320px] dress-casual-shadow rounded-[20px] bg-gradient-radial to bottom from-[#F7F2F0]  to-[#E54F2E]">
             <img
-              src="/images/main-3.png"
+              src={mainContent[2].image}
               alt="main-content-img"
               className="h-[145%] absolute bottom-0 left-[50%] -translate-x-[50%]"
             />
@@ -74,17 +66,14 @@ const MainContent = () => {
       <div className="sm:flex flex-row-reverse items-center gap-16 lg:gap-20">
         <div className="flex-1 space-y-6">
           <h4 className="font-grozen-medical font-bold text-[32px] lg:text-5xl leading-[100%]">
-            TAKE FREQUENT BREAKS
+            {mainContent[3].title}
           </h4>
-          <p className="text-lg font-medium">
-            In a laoreet purus. Integer turpis quam, laoreet id orci nec,
-            ultrices lacinia nunc. Aliquam erat vo
-          </p>
+          <p className="text-lg font-medium">{mainContent[3].subtitle}</p>
         </div>
 
         <div className="flex-1 relative mt-10 sm:mt-0">
           <img
-            src="/images/main-4.png"
+            src={mainContent[3].image}
             alt="main-content-img"
             className="w-full lg:w-[460px] h-[253px] lg:h-[320px] rounded-[20px] object-cover object-center"
           />
@@ -95,17 +84,14 @@ const MainContent = () => {
       <div className="sm:flex items-center gap-16 lg:gap-20">
         <div className="flex-1 space-y-6">
           <h4 className="font-grozen-medical font-bold text-[32px] lg:text-5xl leading-[100%]">
-            USING THE CONTROLS
+            {mainContent[4].title}
           </h4>
-          <p className="text-lg font-medium">
-            Aliquam porta nisl dolor, molestie pellentesque elit molestie in.
-            Morbi metus neque, elementum ullam
-          </p>
+          <p className="text-lg font-medium">{mainContent[4].subtitle}</p>
         </div>
 
         <div className="flex-1 mt-10 sm:mt-0">
           <img
-            src="/images/controller.png"
+            src={mainContent[4].image}
             alt="main-content-img"
             className="w-full lg:w-[460px] h-[235px] lgh-[320px] rounded-[20px] object-cover object-top mix-blend-multiply controller-dropshadow"
           />
