@@ -9,15 +9,15 @@ const Hero = () => {
   return (
     <div className="min-h-screen pt-8 sm:pt-10 sm:pb-[52px]">
       <motion.img
-        initial={{ scale: 1.5, zIndex: 100 }}
-        animate={{
-          scale: 1,
-          zIndex: -1,
-          transition: {
-            duration: 1,
-            type: "tween",
-          },
-        }}
+        // initial={{ scale: 1.5, zIndex: 100 }}
+        // animate={{
+        //   scale: 1,
+        //   zIndex: -1,
+        //   transition: {
+        //     duration: 1,
+        //     type: "tween",
+        //   },
+        // }}
         src={heroBanner.heroImage}
         alt="hero background image"
         className="absolute top-0 left-0 h-[646px] sm:h-fit w-full object-cover object-center -z-20 hero-gradient"

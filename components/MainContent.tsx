@@ -63,10 +63,9 @@ const MainContent = () => {
             className="w-full lg:w-[460px] h-[253px] lg:h-[320px] rounded-[20px] object-cover object-center clear-space-shadow"
           />
           <motion.img
-            initial={{ y: 100, scale: 0 }}
+            initial={{ opacity: 0 }}
             whileInView={{
-              y: 0,
-              scale: 1,
+              opacity: 1,
               transition: { delay: 1.75, duration: 0.3, type: "tween" },
             }}
             viewport={{ once: true }}
@@ -96,21 +95,7 @@ const MainContent = () => {
             viewport={{ once: true }}
             className="relative w-full lg:w-[460px] h-[253px] lg:h-[320px] dress-casual-shadow rounded-[20px] bg-gradient-radial to bottom from-[#F7F2F0]  to-[#E54F2E]"
           >
-            <motion.img
-              initial={{ scale: 0, y: 300, x: "-50%" }}
-              whileInView={{
-                scale: 1,
-                y: 0,
-                x: "-50%",
-              }}
-              transition={{
-                delay: 1,
-                type: "spring",
-                stiffness: 300,
-                damping: 20,
-                duration: 0.7,
-              }}
-              viewport={{ once: true }}
+            <img
               src={mainContent[2].image}
               alt="main-content-img"
               className="h-[145%] absolute bottom-0 left-[50%] -translate-x-[50%]"

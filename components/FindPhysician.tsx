@@ -93,7 +93,7 @@ const FindPhysician = () => {
           </div>
         </div>
 
-        <div className="flex-1 grid grid-cols-3 grid-row-3 mt-14 sm:mt-0">
+        <div className="flex-1 grid grid-cols-3 grid-row-5 mt-14 sm:mt-0 sm:absolute md:relative sm:translate-x-56 md:translate-x-0 sm:right-0">
           <motion.img
             initial={{ opacity: 0 }}
             whileInView={{
@@ -103,7 +103,7 @@ const FindPhysician = () => {
             viewport={{ once: true }}
             alt="physician 1 "
             src={primaryPhysician.image1}
-            className="w-full h-[167px] sm:w-[340px] sm:h-[289px] rounded-[20px] row-span-2 row-start-1 col-span-2 col-start-2 object-cover object-center shadow-2xl shadow-black/50"
+            className="w-ful h-167px] sm:w-[340px] aspect-square sm:h-[289px] rounded-[20px] row-span-3 row-start-1 col-span-2 col-start-2 object-cover object-center shadow-2xl shadow-black/50"
           />
           <motion.img
             initial={{ opacity: 0 }}
@@ -114,7 +114,7 @@ const FindPhysician = () => {
             viewport={{ once: true }}
             alt="physician 2 "
             src={primaryPhysician.image2}
-            className=" z-20 w-full h-[167px] sm:w-[340px] sm:h-[289px] rounded-[20px] row-span-2 row-start-2 col-span-2 col-start-1 object-cover object-center shadow-2xl shadow-black/50"
+            className=" z-20 w-ful h[167px] aspect-square sm:w-[340px] sm:h-[289px] rounded-[20px] row-span-3 row-start-3 col-span-2 col-start-1 object-cover object-center shadow-2xl shadow-black/50"
           />
         </div>
       </div>
