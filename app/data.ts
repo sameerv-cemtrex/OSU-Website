@@ -89,8 +89,8 @@ export const contact = {
 export const footer = {
   logo: "/images/logo.svg",
   links: [
-    { text: "Terms and Conditions", url: "#" },
-    { text: "Privacy Policy", url: "#" },
+    { text: "Terms and Conditions", url: "/terms-and-conditions" },
+    { text: "Privacy Policy", url: "/privacy-policy" },
     { text: "Contact Us", url: "#" },
   ],
 };

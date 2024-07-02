@@ -3,9 +3,33 @@ import { primaryPhysician } from "@/app/data";
 import React from "react";
 import { useMediaQuery } from "react-responsive";
 import { motion } from "framer-motion";
+import { cn } from "@/lib/utils";
 
 const FindPhysician = () => {
   const isTablet = useMediaQuery({ query: "(min-width: 1024px)" });
+  const [zipcode, setZipcode] = React.useState<string>("");
+  const [error, setError] = React.useState<boolean>(false);
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    console.log("submitted");
+  };
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setZipcode(e.target.value);
+    setError(false);
+
+    if (e.target.value.length !== 0) {
+      // regex for US zip code validation ZIP+4 (12345-5645)
+      const isValid = /(^\d{5}$)|(^\d{5}-\d{4}$)/.test(e.target.value);
+
+      if (!isValid) {
+        setError(true);
+      } else {
+        setError(false);
+      }
+    }
+  };
   return (
     <div className="py-14  sm:pt-[142px] sm:pb-[90px] bg-white">
       <div className="container px-6 xl:px-[6.75rem] h-full sm:flex items-center sm:gap-10 lg:gap-[170px]">
@@ -17,26 +41,34 @@ const FindPhysician = () => {
             {primaryPhysician.subtitle}
           </p>
 
-          <div className="mt-10">
+          <form onSubmit={handleSubmit} className="mt-10">
             <p className="uppercase font-grozen-medical font-medium text-base">
               ENTER YOUR ZIPCODE
             </p>
 
-            <div className="flex items-center space-x-3 my-7">
+            <div className="flex items-center space-x-3 mt-7">
               <input
                 type="text"
-                className="border-b-2 border-[#E54F2E] bg-white px-6 py-4 text-lg text-black"
+                onChange={handleChange}
+                placeholder="ZIPCODE"
+                className={cn(
+                  "border-b-2 border-[#E54F2E] outline-[#E54F2E] bg-white px-6 py-4 text-lg text-black placeholder:text-black",
+                  error && "text-[#E54F2E]"
+                )}
               />
               <button
                 type="button"
-                className="bg-[#E54F2E] active:scale-95 active:shadow-lg active:bg-orange-600 duration-50 ease-in-out text-white font-grozen-medical text-lg font-semibold tracking-[0.45px] px-6 py-4 rounded"
+                className="bg-[#E54F2E] active:scale-95 leading-[19px] active:shadow-lg active:bg-orange-600 duration-50 ease-in-out text-white font-grozen-medical text-lg font-semibold tracking-[0.45px] px-6 py-4 rounded"
               >
                 GO
               </button>
             </div>
-          </div>
+            <p className="text-[#E54F2E] text-lg leading-5 mt-3">
+              {error && "Please enter a valid zipcode."}
+            </p>
+          </form>
 
-          <div className="bg-[#F8F3F1] rounded p-3 ">
+          <div className="bg-[#F8F3F1] rounded p-3 mt-7">
             <p className="font-medium">
               {primaryPhysician.linkText1}
               <a

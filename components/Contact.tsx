@@ -17,7 +17,7 @@ const Contact = () => {
 
         <button
           type="button"
-          className="bg-[#E54F2E] mt-10 z-10 relative text-white text-lg leading-[19.8pxs] font-grozen-medical font-medium p-6 rounded-lg active:scale-95 active:bg-orange-600 ease-in-out duration-100"
+          className="bg-[#E54F2E] mt-10 z-10 relative text-white text-lg leading-[19.8px] font-grozen-medical font-medium p-6 rounded-lg active:scale-95 active:bg-orange-600 ease-in-out duration-100"
         >
           CONTACT US
         </button>
