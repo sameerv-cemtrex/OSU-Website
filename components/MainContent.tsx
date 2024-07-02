@@ -5,10 +5,19 @@ import { motion } from "framer-motion";
 
 const MainContent = () => {
   return (
-    <div className="mx-6 min-[1440px]:container rounded-3xl bg-[#F8F3F1] px-[32px] lg:px-[86px] pt-[81px] sm:py-[82px] lg:pt-[138px] lg:pb-[156px] space-y-14 sm:space-y-[104px] relative">
+    <motion.div
+      initial={{ opacity: 0, y: 300 }}
+      whileInView={{
+        opacity: 1,
+        y: 0,
+        transition: { duration: 0.75, type: "tween" },
+      }}
+      viewport={{ once: true }}
+      className="mx-6 min-[1440px]:container rounded-3xl bg-[#F8F3F1] px-[32px] lg:px-[86px] pt-[81px] sm:py-[82px] lg:pt-[138px] lg:pb-[156px] space-y-14 sm:space-y-[104px] relative"
+    >
       <div className="sm:flex items-center gap-16 lg:gap-20">
         <div className="flex-1 space-y-6">
-          <h4 className="font-grozen-medical font-bold text-[40px] lg:text-5xl leading-[100%]">
+          <h4 className="font-grozen-medical font-bold text-[40px] lg:text-5xl leading-[100%] text-gradient-to-b">
             {mainContent[0].title}
           </h4>
           <p className="text-lg font-medium">{mainContent[0].subtitle}</p>
@@ -43,7 +52,7 @@ const MainContent = () => {
 
       <div className="sm:flex flex-row-reverse items-center gap-16 lg:gap-20">
         <div className="flex-1 space-y-6">
-          <h4 className="font-grozen-medical font-bold text-[32px] lg:text-5xl leading-[100%]">
+          <h4 className="font-grozen-medical font-bold text-[32px] lg:text-5xl leading-[100%] text-gradient-to-b">
             {mainContent[1].title}
           </h4>
           <p className="text-lg font-medium">{mainContent[1].subtitle}</p>
@@ -71,14 +80,14 @@ const MainContent = () => {
             viewport={{ once: true }}
             alt="clear space area overlay"
             src="/images/clear-space-area.svg"
-            className="absolute z-10 left-[34px] sm:left-[50px] lg:left-[100px] -bottom-[14.5px] lg:-bottom-[40.5px] clear-space-area"
+            className="absolute z-10 left-[10%] sm:left-[50px] lg:left-[100px] -bottom-[14.5px] lg:-bottom-[40.5px] clear-space-area"
           />
         </div>
       </div>
 
       <div className="sm:flex items-center gap-16 lg:gap-20">
         <div className="flex-1 space-y-6">
-          <h4 className="font-grozen-medical font-bold text-[32px] lg:text-5xl leading-[100%]">
+          <h4 className="font-grozen-medical font-bold text-[32px] lg:text-5xl leading-[100%] text-gradient-to-b">
             {mainContent[2].title}
           </h4>
           <p className="text-lg font-medium">{mainContent[2].subtitle}</p>
@@ -93,7 +102,7 @@ const MainContent = () => {
               transition: { delay: 1, duration: 0.75, type: "tween" },
             }}
             viewport={{ once: true }}
-            className="relative w-full lg:w-[460px] h-[253px] lg:h-[320px] dress-casual-shadow rounded-[20px] bg-gradient-radial to bottom from-[#F7F2F0]  to-[#E54F2E]"
+            className="relative w-full lg:w-[460px] h-[253px] lg:h-[320px] dress-casual-shadow rounded-[20px] dress-casual-gradient"
           >
             <img
               src={mainContent[2].image}
@@ -106,7 +115,7 @@ const MainContent = () => {
 
       <div className="sm:flex flex-row-reverse items-center gap-16 lg:gap-20">
         <div className="flex-1 space-y-6">
-          <h4 className="font-grozen-medical font-bold text-[32px] lg:text-5xl leading-[100%]">
+          <h4 className="font-grozen-medical font-bold text-[32px] lg:text-5xl leading-[100%] text-gradient-to-b">
             {mainContent[3].title}
           </h4>
           <p className="text-lg font-medium">{mainContent[3].subtitle}</p>
@@ -139,7 +148,7 @@ const MainContent = () => {
 
       <div className="sm:flex items-center gap-16 lg:gap-20">
         <div className="flex-1 space-y-6">
-          <h4 className="font-grozen-medical font-bold text-[32px] lg:text-5xl leading-[100%]">
+          <h4 className="font-grozen-medical font-bold text-[32px] lg:text-5xl leading-[100%] text-gradient-to-b">
             {mainContent[4].title}
           </h4>
           <p className="text-lg font-medium">{mainContent[4].subtitle}</p>
@@ -156,7 +165,7 @@ const MainContent = () => {
             viewport={{ once: true }}
             src={mainContent[4].image}
             alt="main-content-img"
-            className="w-full lg:w-[460px] h-[235px] lgh-[320px] rounded-[20px] object-cover object-top mix-blend-multiply controller-dropshadow"
+            className="w-full lg:w-[460px] h-[235px] lgh-[320px] rounded-[20px] object-contain object-top mix-blend-multiply controller-dropshadow"
           />
         </div>
       </div>
@@ -164,7 +173,7 @@ const MainContent = () => {
       {/* Top and bottom gradients */}
       <div className="main-content-top-gradient absolute top-0 left-0 w-full -scale-y-[123%] sm:-scale-y-[144%] -scale-x-100" />
       <div className="main-content-bottom-gradient absolute bottom-0 left-0 w-full" />
-    </div>
+    </motion.div>
   );
 };
 

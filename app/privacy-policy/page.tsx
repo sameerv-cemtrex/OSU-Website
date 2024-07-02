@@ -20,7 +20,7 @@ const PrivacyPolicy = () => {
         </nav>
       </Link>
 
-      <h1 className="font-grozen-medical text-center pt-[30px] font-bold text-[40px] leading-[100%]">
+      <h1 className="font-grozen-medical text-center pt-[30px] font-bold text-[40px] leading-[100%] text-gradient-to-b">
         PRIVACY POLICY
       </h1>
       <p className="mt-3 text-[28px] leading-normal text-center font-medium">

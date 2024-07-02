@@ -34,7 +34,7 @@ const FindPhysician = () => {
     <div className="py-14  sm:pt-[142px] sm:pb-[90px] bg-white">
       <div className="container px-6 xl:px-[6.75rem] h-full sm:flex items-center sm:gap-10 lg:gap-[170px]">
         <div className="sm:w-[42%]">
-          <h4 className="text-[40px] font-bold font-grozen-medical leading-10 ">
+          <h4 className="text-[40px] font-bold font-grozen-medical leading-10 text-gradient-to-b">
             FIND A {isTablet ? "PRIMARY CARE PHYSICIAN" : "PCP"}
           </h4>
           <p className="mt-6 text-lg font-normal leading-[150%]">

@@ -6,6 +6,10 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --primary-orange: 11deg, 78%, 54%;
+  --primary-blue: 194deg, 93%, 42%;
+  --primary-green: 150deg, 62%, 41%;
+  --primary-pink: 315deg, 62%, 55%;
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -33,8 +37,8 @@ body {
 }
 
 .hero-bg {
-  background: url("/images/hero.png") lightgray -58px -300px / 126.953% 128.409%
-    no-repeat;
+  background: url("/images/hero.webp") lightgray -58px -300px / 126.953%
+    128.409% no-repeat;
   background-position: center;
   background-size: cover;
 }
@@ -115,9 +119,16 @@ body {
 .dress-casual-shadow {
   box-shadow: 223px 190px 82px 0px rgba(229, 80, 46, 0.01),
     143px 122px 75px 0px rgba(229, 80, 46, 0.05),
-    80px 68px 63px 0px rgba(229, 80, 46, 0.16),
-    36px 30px 47px 0px rgba(229, 80, 46, 0.27),
-    9px 8px 26px 0px rgba(229, 80, 46, 0.31);
+    23px 14px 63px 0px rgba(229, 80, 46, 0.16),
+    29px 177px 26px -154px rgba(229, 80, 46, 0.36);
+}
+
+.dress-casual-gradient {
+  background: radial-gradient(
+    72.36% 172.5% at 52.85% 169.2%,
+    #f7f2f0 40.88%,
+    #e54f2e 100%
+  );
 }
 
 .getting-started-shadow {
@@ -154,7 +165,7 @@ body {
 
 @media (max-width: 640px) {
   .clear-space-area {
-    width: 340.751px;
+    width: 100%;
     height: 137.947px;
   }
 }
@@ -189,4 +200,12 @@ body {
     transparent 69.52%
   );
   height: 476px;
+}
+
+.text-gradient-to-r {
+  @apply bg-gradient-to-r from-[#4D525D] to-[#1C2232] bg-clip-text text-transparent;
+}
+
+.text-gradient-to-b {
+  @apply bg-gradient-to-b from-[#4D525D] to-[#1C2232] bg-clip-text text-transparent;
 }

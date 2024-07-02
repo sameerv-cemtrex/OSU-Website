@@ -1,23 +1,24 @@
 "use client";
 import { heroCards, heroBanner } from "@/app/data";
 import { cn } from "@/lib/utils";
-import React from "react";
+import React, { useRef } from "react";
 import parse from "html-react-parser";
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 const Hero = () => {
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start start", "end start"],
+  });
+  const imageY = useTransform(scrollYProgress, [0, 1], ["0%", "-35%"]);
+  const headingY = useTransform(scrollYProgress, [0, 1], ["0%", "-15%"]);
+  const subHeadingY = useTransform(scrollYProgress, [0, 1], ["0%", "-19%"]);
+
   return (
-    <div className="min-h-screen pt-8 sm:pt-10 sm:pb-[52px]">
+    <div ref={ref} className="min-h-screen pt-8 sm:pt-10 sm:pb-[52px]">
       <motion.img
-        // initial={{ scale: 1.5, zIndex: 100 }}
-        // animate={{
-        //   scale: 1,
-        //   zIndex: -1,
-        //   transition: {
-        //     duration: 1,
-        //     type: "tween",
-        //   },
-        // }}
+        style={{ y: imageY }}
         src={heroBanner.heroImage}
         alt="hero background image"
         className="absolute top-0 left-0 h-[646px] sm:h-fit w-full object-cover object-center -z-20 hero-gradient"
@@ -39,8 +40,9 @@ const Hero = () => {
         <div className="flex flex-col items-center">
           <motion.h1
             initial={{ opacity: 0 }}
+            style={{ y: headingY }}
             animate={{ opacity: 1, transition: { delay: 1.2, duration: 0.75 } }}
-            className="font-grozen-medical font-bold text-[32px] leading-[38px] sm:text-5xl lg:text-[56px] lg:w-[70vw] 2xl:w-[60vw] sm:leading-[60px] text-center"
+            className="font-grozen-medical font-bold text-[32px] leading-[38px] sm:text-5xl lg:text-[56px] lg:w-[70vw] 2xl:w-[60vw] sm:leading-[60px] text-center text-gradient-to-r"
           >
             {parse(heroBanner.title)}
           </motion.h1>
@@ -48,6 +50,7 @@ const Hero = () => {
           <motion.h3
             initial={{ opacity: 0 }}
             animate={{ opacity: 1, transition: { delay: 1.4, duration: 0.75 } }}
+            style={{ y: subHeadingY }}
             className="sm:block hidden text-lg sm:text-[28px] leading-[26px] sm:leading-10 mt-4 text-center lg:w-[670px] font-medium"
           >
             {parse(heroBanner.subtitleWithBreak)}
@@ -84,9 +87,10 @@ const Hero = () => {
             <div className="rounded-2xl h-[148px] bg-[#202636]" />
             <h4
               className={cn(
-                "text-2xl mt-6 text-center font-semibold leading-[26px] font-grozen-medical uppercase",
-                `text-[${card.colorOverlay[1]}]`
+                "text-2xl mt-6 text-center font-semibold leading-[26px] font-grozen-medical uppercase ",
+                card.colorOverlay[1]
               )}
+              // style={{ color: `var(--primary-${card.colorOverlay[0]})` }}
             >
               {card.title}
             </h4>

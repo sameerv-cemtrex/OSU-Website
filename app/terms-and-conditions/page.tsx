@@ -20,7 +20,7 @@ const TermsAndConditions = () => {
         </nav>
       </Link>
 
-      <h1 className="font-grozen-medical text-center pt-[30px] font-bold text-[40px] leading-[100%]">
+      <h1 className="font-grozen-medical text-center pt-[30px] font-bold text-[40px] leading-[100%] text-gradient-to-b">
         TERMS AND CONDITIONS
       </h1>
       <p className="mt-3 text-[28px] leading-normal text-center font-medium">

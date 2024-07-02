@@ -13,6 +13,10 @@ const config: Config = {
       },
       colors: {
         black: "#2b2b2b",
+        "primary-orange": "hsl(var(--primary-orange) , 1)",
+        "primary-blue": "hsl(var(--primary-blue) , 1)",
+        "primary-green": "hsl(var(--primary-green) , 1)",
+        "primary-pink": "hsl(var(--primary-pink) , 1)",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

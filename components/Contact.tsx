@@ -24,12 +24,13 @@ const Contact = () => {
           {contact.subtitle}
         </p>
 
-        <button
-          type="button"
+        <a
+          href={contact.contactEmail}
+          role="button"
           className="bg-[#E54F2E] mt-10 z-10 relative text-white text-lg leading-[19.8px] font-grozen-medical font-medium p-6 rounded-lg active:scale-95 active:bg-orange-600 ease-in-out duration-100"
         >
           CONTACT US
-        </button>
+        </a>
       </div>
 
       <motion.img
@@ -37,12 +38,12 @@ const Contact = () => {
         whileInView={{
           opacity: 1,
           y: 0,
-          transition: { delay: 0.5, duration: 0.9 },
+          transition: { delay: 0.2, duration: 0.9 },
         }}
         viewport={{ once: true }}
         src={contact.image}
         alt="contact-img"
-        className="sm:absolute left-0 lg:left-14 bottom-0 w-[272px] h-[289px] mt-[49px] sm:mt-0 sm:h-fit sm:w-[356px] lg:w-[482px] rounded-[20px] object-cover object-center"
+        className="sm:absolute left-0 lg:left-16 xl:left-32 bottom-0 w-[272px] h-[289px] mt-[49px] sm:mt-0 sm:h-fit sm:w-[346px] lg:w-[398px] rounded-[20px] object-cover object-center"
       />
     </motion.div>
   );
