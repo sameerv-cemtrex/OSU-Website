@@ -21,7 +21,7 @@ const PrivacyPolicy = () => {
       </Link>
 
       <h1 className="font-grozen-medical text-center pt-[30px] font-bold text-[40px] leading-[100%]">
-        Privacy Policy
+        PRIVACY POLICY
       </h1>
       <p className="mt-3 text-[28px] leading-normal text-center font-medium">
         May 2024
@@ -35,19 +35,20 @@ const PrivacyPolicy = () => {
               the Commercial Registry of Málaga, volume 4994, sheet 217, page
               number MA-113059, with Tax Number B-93183366 and registered office
               at 13 Molina Lario St., 5th floor, 29015, Málaga, Spain
-              ("Company").
+              (&quot;Company&quot;).
             </p>
             <p>
-              These terms of use ("Terms") govern the access, browsing and use
-              by the users ("User" or " Users", as applicable) of
-              https://www.freepik.com/, including any of its subdomains and/or
-              sections ("Website"); as well as the services rendered through the
-              Website ("Service" or " Services", as applicable) which include
-              the download and use of certain content.
+              These terms of use (&quot;Terms&quot;) govern the access, browsing
+              and use by the users (&quot;User&quot; or &quot;Users&quot;, as
+              applicable) of https://www.freepik.com/, including any of its
+              subdomains and/or sections (&quot;Website&quot;); as well as the
+              services rendered through the Website (&quot;Service&quot; or
+              &quot; Services&quot;, as applicable) which include the download
+              and use of certain content.
             </p>
             <p>
               By accessing and using the Website, the User accepts in their
-              entirety and agrees to be bound by the Company's{" "}
+              entirety and agrees to be bound by the Company&apos;s{" "}
               <ExternalLink href="https://www.freepik.com/legal/acceptable-use-policy/">
                 Acceptable Use Policy
               </ExternalLink>
@@ -101,17 +102,18 @@ const PrivacyPolicy = () => {
                 specific information related to such content.
               </p>
               <p>
-                The Services may offer contents owned by the Company ("Freepik
-                Own Content"), contents owned by third parties offered through
-                the Website ("Collaborators Content") as well as third-party
-                content not offered free of charge ("Sponsored Content").
-                Sponsored Content is duly differentiated and identified on the
-                search results. Freepik Own Content and Collaborators Content
-                shall be hereinafter referred to collectively as the " Freepik
-                Content" and can be downloaded through the Website.
+                The Services may offer contents owned by the Company
+                (&quot;Freepik Own Content&quot;), contents owned by third
+                parties offered through the Website (&quot;Collaborators
+                Content&quot;) as well as third-party content not offered free
+                of charge (&quot;Sponsored Content&quot;). Sponsored Content is
+                duly differentiated and identified on the search results.
+                Freepik Own Content and Collaborators Content shall be
+                hereinafter referred to collectively as the &quot; Freepik
+                Content&quot; and can be downloaded through the Website.
               </p>
               <p>
-                The Services also include the use of the Company's{" "}
+                The Services also include the use of the Company&apos;s{" "}
                 <ExternalLink href="https://www.freepik.com/legal/terms-of-use#nav-ai-products">
                   AI Products
                 </ExternalLink>
@@ -144,10 +146,10 @@ const PrivacyPolicy = () => {
                 of downloads, accesses or clicks over such content through any
                 robots, spiders or any other mechanism, mobile application,
                 program or tool) and will result in the cancellation of the
-                User's account by the Company and the obligation for the User to
-                indemnify the Company for all damages suffered as a result of
-                the User's breach of this undertaking, without the right of
-                reimbursement of any of the amounts paid.
+                User&apos;s account by the Company and the obligation for the
+                User to indemnify the Company for all damages suffered as a
+                result of the User&apos;s breach of this undertaking, without
+                the right of reimbursement of any of the amounts paid.
               </p>
               <p>
                 The User agrees not to use the Services negligently, for
@@ -167,19 +169,19 @@ const PrivacyPolicy = () => {
                 mechanism, mobile application, program or tool to access, copy
                 or control any part of the Website or the Services in any way
                 which is contrary to the ordinary use of the Website or which
-                infringes the Company's interests (without its express prior
-                authorization) is strictly prohibited. Likewise, obtaining or
-                attempting to obtain the contents of the Website using any
+                infringes the Company&apos;s interests (without its express
+                prior authorization) is strictly prohibited. Likewise, obtaining
+                or attempting to obtain the contents of the Website using any
                 method or system not expressly authorized by the Company or
                 which is not the ordinary method of accessing the Website is
                 also strictly prohibited.
               </p>
               <p>
                 The User shall be responsible for any costs required for the
-                Services' use and for ensuring, prior to using the Services,
-                that the Services' features meet the User's needs and that
-                he/she/it meets all requirements and has all the equipment and
-                software necessary for this purpose.
+                Services&apos; use and for ensuring, prior to using the
+                Services, that the Services&apos; features meet the User&apos;s
+                needs and that he/she/it meets all requirements and has all the
+                equipment and software necessary for this purpose.
               </p>
               <p>
                 The rights granted to the User under these Terms are personal
@@ -214,23 +216,23 @@ const PrivacyPolicy = () => {
                 for keeping such information updated. Should the User provide
                 false, outdated or incomplete information, or should the Company
                 have reasons to suspect it, the Company reserves the right to
-                suspend or cancel the User's account.
+                suspend or cancel the User&apos;s account.
               </p>
               <p>
                 The User must protect and keep the account password confidential
                 and must not disclose it to third parties. The User must neither
-                allow other Users to access the Services through the User's
+                allow other Users to access the Services through the User&apos;s
                 account nor use the account of another User to access the
                 Services.
               </p>
               <p>
                 The User is responsible for all operations carried out through
-                the User's account through any device. If the User suspects that
-                another User is using his account, he/she/it should immediately
-                inform the Company.
+                the User&apos;s account through any device. If the User suspects
+                that another User is using his account, he/she/it should
+                immediately inform the Company.
               </p>
               <p>
-                The Company may suspend or cancel the User's account if it
+                The Company may suspend or cancel the User&apos;s account if it
                 considers that the User has breached these Terms.
               </p>
             </Section>
@@ -252,12 +254,12 @@ const PrivacyPolicy = () => {
 
               <Section title="4.1. Sponsored Content">
                 <p>
-                  Regarding Sponsored Content, the Website's role is limited to
-                  displaying content offered by the sponsored website with which
-                  the Company has reached an affiliation agreement or similar.
-                  Therefore, the Company will display a link to the sponsored
-                  website which offers the Sponsored Content, together with
-                  specific related information. In some cases, in order to
+                  Regarding Sponsored Content, the Website&apos;s role is
+                  limited to displaying content offered by the sponsored website
+                  with which the Company has reached an affiliation agreement or
+                  similar. Therefore, the Company will display a link to the
+                  sponsored website which offers the Sponsored Content, together
+                  with specific related information. In some cases, in order to
                   provide the User a better user experience and facilitate
                   returning to the Services, the link can be presented within a
                   frame corresponding to the Website, which can be removed by
@@ -368,17 +370,18 @@ const PrivacyPolicy = () => {
             <Section title="6. Liability">
               <p>
                 The User acknowledges and agrees that he/she/it uses the Website
-                and its Services at the User's own risk and under the User's
-                responsibility and, therefore, the Company does not accept any
-                responsibility for misuse or use in breach of these Terms.
+                and its Services at the User&apos;s own risk and under the
+                User&apos;s responsibility and, therefore, the Company does not
+                accept any responsibility for misuse or use in breach of these
+                Terms.
               </p>
               <p>
                 The User will be responsible for any damages to the Company
-                resulting from the User's use of the Website and the Services in
-                breach of the Terms and accepts to indemnify the Company and its
-                directors, employees, agents and representatives from any
-                liability in which they may incur as a result of the User's
-                breach of these Terms.
+                resulting from the User&apos;s use of the Website and the
+                Services in breach of the Terms and accepts to indemnify the
+                Company and its directors, employees, agents and representatives
+                from any liability in which they may incur as a result of the
+                User&apos;s breach of these Terms.
               </p>
             </Section>
           </article>
