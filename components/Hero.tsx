@@ -24,7 +24,7 @@ const Hero = () => {
         className="absolute top-0 left-0 h-[646px] sm:h-fit w-full object-cover object-center -z-20 hero-gradient"
       />
 
-      <div className="container lg:px-[6.75rem]  h-[60vh] sm:h-[55vh] lg:h-[70vh] grid place-items-center relative">
+      <div className="container lg:px-[6.75rem]  h-[60vh] sm:h-[55vh] lg:h-[70vh] grid justify-center items-end relative">
         {/* Nav Logo */}
         <motion.img
           initial={{ opacity: 0 }}
@@ -37,7 +37,7 @@ const Hero = () => {
           alt="logo"
         />
 
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center pb-14 sm:pb-24 lg:pb-[150px]">
           <motion.h1
             initial={{ opacity: 0 }}
             style={{ y: headingY }}
@@ -51,14 +51,14 @@ const Hero = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1, transition: { delay: 1.4, duration: 0.75 } }}
             style={{ y: subHeadingY }}
-            className="sm:block hidden text-lg sm:text-[28px] leading-[26px] sm:leading-10 mt-4 text-center lg:w-[670px] font-medium"
+            className="sm:block hidden text-[#383D4B] text-lg sm:text-[28px] leading-[26px] sm:leading-10 mt-4 text-center lg:w-[670px] font-medium"
           >
             {parse(heroBanner.subtitleWithBreak)}
           </motion.h3>
           <motion.h3
             initial={{ opacity: 0 }}
             animate={{ opacity: 1, transition: { delay: 1.4, duration: 0.75 } }}
-            className="sm:hidden text-lg leading-[26px] mt-4 text-center w-[90vw] font-medium"
+            className="sm:hidden text-lg text-[#383D4B] leading-[26px] mt-4 text-center w-[90vw] font-medium"
           >
             {heroBanner.subtitle}
           </motion.h3>

@@ -6,11 +6,12 @@ import { motion } from "framer-motion";
 const Contact = () => {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 300 }}
+      initial={{ opacity: 0, y: 300, overflow: "hidden" }}
       whileInView={{
         opacity: 1,
         y: 0,
-        transition: { duration: 0.9 },
+        overflow: "visible",
+        transition: { duration: 0.9, type: "tween" },
       }}
       viewport={{ once: true }}
       className="mx-6 min-[1440px]:container relative rounded-3xl px-8 sm:px-[55px] pt-[46px] sm:pb-6 lg:p-[105px] mt-[5.5rem] lg:mt-[7.5rem] bg-gradient-to-r from-[#151B2B] via-[#151B2B] to-[#E54F2E] sm:flex items-center justify-end"
@@ -34,16 +35,16 @@ const Contact = () => {
       </div>
 
       <motion.img
-        initial={{ opacity: 0, y: 300 }}
+        initial={{ opacity: 0, scale: 0, transformOrigin: "bottom" }}
         whileInView={{
           opacity: 1,
-          y: 0,
-          transition: { delay: 0.2, duration: 0.9 },
+          scale: 1,
+          transition: { duration: 1, type: "tween" },
         }}
         viewport={{ once: true }}
         src={contact.image}
         alt="contact-img"
-        className="sm:absolute left-0 lg:left-16 xl:left-32 bottom-0 w-[272px] h-[289px] mt-[49px] sm:mt-0 sm:h-fit sm:w-[346px] lg:w-[398px] rounded-[20px] object-cover object-center"
+        className="sm:absolute left-0 lg:left-16 xl:left-32 bottom-0 mx-auto sm:mx-0 w-[272px] mt-[49px] sm:mt-0 sm:h-fit sm:w-[346px] lg:w-[398px] rounded-[20px] object-cover object-center"
       />
     </motion.div>
   );

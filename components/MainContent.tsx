@@ -13,9 +13,19 @@ const MainContent = () => {
         transition: { duration: 0.75, type: "tween" },
       }}
       viewport={{ once: true }}
-      className="mx-6 min-[1440px]:container rounded-3xl bg-[#F8F3F1] px-[32px] lg:px-[86px] pt-[81px] sm:py-[82px] lg:pt-[138px] lg:pb-[156px] space-y-14 sm:space-y-[104px] relative"
+      className="mx-6 min-[1440px]:container rounded-3xl bg-[#F8F3F1] px-[32px] lg:px-[86px] pt-[81px] pb-[110px] sm:py-[82px] lg:pt-[138px] lg:pb-[156px] space-y-14 sm:space-y-[104px] relative"
     >
-      <div className="sm:flex items-center gap-16 lg:gap-20">
+      {/* Gettting Started */}
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{
+          opacity: 1,
+          y: 0,
+          transition: { delay: 1, duration: 0.75, type: "tween" },
+        }}
+        viewport={{ once: true }}
+        className="sm:flex items-center gap-16 lg:gap-20"
+      >
         <div className="flex-1 space-y-6">
           <h4 className="font-grozen-medical font-bold text-[40px] lg:text-5xl leading-[100%] text-gradient-to-b">
             {mainContent[0].title}
@@ -48,9 +58,19 @@ const MainContent = () => {
             className="absolute top-0 left-0 z-10 w-full xl:w-[460px] h-[235px] lg:h-[320px] rounded-[20px] getting-started-shadow -scale-x-100"
           />
         </div>
-      </div>
+      </motion.div>
 
-      <div className="sm:flex flex-row-reverse items-center gap-16 lg:gap-20">
+      {/* Clear Some Space */}
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{
+          opacity: 1,
+          y: 0,
+          transition: { delay: 1, duration: 0.75, type: "tween" },
+        }}
+        viewport={{ once: true }}
+        className="sm:flex flex-row-reverse items-center gap-16 lg:gap-20"
+      >
         <div className="flex-1 space-y-6">
           <h4 className="font-grozen-medical font-bold text-[32px] lg:text-5xl leading-[100%] text-gradient-to-b">
             {mainContent[1].title}
@@ -75,17 +95,27 @@ const MainContent = () => {
             initial={{ opacity: 0 }}
             whileInView={{
               opacity: 1,
-              transition: { delay: 1.75, duration: 0.3, type: "tween" },
+              transition: { delay: 3.5, duration: 0.3, type: "just" },
             }}
             viewport={{ once: true }}
             alt="clear space area overlay"
             src="/images/clear-space-area.svg"
-            className="absolute z-10 left-[10%] sm:left-[50px] lg:left-[100px] -bottom-[14.5px] lg:-bottom-[40.5px] clear-space-area"
+            className="absolute z-10 left-[12%] sm:left-[15%] lg:left-[20%] xl:left-[15%] -bottom-[14.5px] lg:-bottom-[5%] clear-space-area"
           />
         </div>
-      </div>
+      </motion.div>
 
-      <div className="sm:flex items-center gap-16 lg:gap-20">
+      {/* Dress Casual */}
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{
+          opacity: 1,
+          y: 0,
+          transition: { delay: 1.34, duration: 0.75, type: "tween" },
+        }}
+        viewport={{ once: true }}
+        className="sm:flex items-center gap-16 lg:gap-20"
+      >
         <div className="flex-1 space-y-6">
           <h4 className="font-grozen-medical font-bold text-[32px] lg:text-5xl leading-[100%] text-gradient-to-b">
             {mainContent[2].title}
@@ -111,9 +141,19 @@ const MainContent = () => {
             />
           </motion.div>
         </div>
-      </div>
+      </motion.div>
 
-      <div className="sm:flex flex-row-reverse items-center gap-16 lg:gap-20">
+      {/* Take Frequent Breaks */}
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{
+          opacity: 1,
+          y: 0,
+          transition: { delay: 1.4, duration: 0.75, type: "tween" },
+        }}
+        viewport={{ once: true }}
+        className="sm:flex flex-row-reverse items-center gap-16 lg:gap-20"
+      >
         <div className="flex-1 space-y-6">
           <h4 className="font-grozen-medical font-bold text-[32px] lg:text-5xl leading-[100%] text-gradient-to-b">
             {mainContent[3].title}
@@ -138,15 +178,25 @@ const MainContent = () => {
             initial={{ opacity: 0 }}
             whileInView={{
               opacity: 1,
-              transition: { delay: 2.5, duration: 0.75, type: "tween" },
+              transition: { delay: 4, duration: 0.75, type: "tween" },
             }}
             viewport={{ once: true }}
             className="absolute top-0 left-0 w-full lg:w-[460px] h-[253px] lg:h-[320px] rounded-[24px] take-breaks-shadow  z-10"
           />
         </div>
-      </div>
+      </motion.div>
 
-      <div className="sm:flex items-center gap-16 lg:gap-20">
+      {/* Using controls */}
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{
+          opacity: 1,
+          y: 0,
+          transition: { delay: 1.4, duration: 0.75, type: "tween" },
+        }}
+        viewport={{ once: true }}
+        className="sm:flex items-center gap-16 lg:gap-20"
+      >
         <div className="flex-1 space-y-6">
           <h4 className="font-grozen-medical font-bold text-[32px] lg:text-5xl leading-[100%] text-gradient-to-b">
             {mainContent[4].title}
@@ -168,7 +218,7 @@ const MainContent = () => {
             className="w-full lg:w-[460px] h-[235px] lgh-[320px] rounded-[20px] object-contain object-top mix-blend-multiply controller-dropshadow"
           />
         </div>
-      </div>
+      </motion.div>
 
       {/* Top and bottom gradients */}
       <div className="main-content-top-gradient absolute top-0 left-0 w-full -scale-y-[123%] sm:-scale-y-[144%] -scale-x-100" />

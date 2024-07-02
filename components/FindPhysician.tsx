@@ -9,27 +9,30 @@ const FindPhysician = () => {
   const isTablet = useMediaQuery({ query: "(min-width: 1024px)" });
   const [zipcode, setZipcode] = React.useState<string>("");
   const [error, setError] = React.useState<boolean>(false);
+  const [showLinks, setShowLinks] = React.useState<boolean>(false);
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log("submitted");
+    console.log("submitted", zipcode);
+    if (zipcode.length !== 0) {
+      // regex for US zip code validation ZIP+4 (12345-5645)
+      const isValid = /(^\d{5}$)|(^\d{5}-\d{4}$)/.test(zipcode);
+      console.log(isValid);
+      if (!isValid) {
+        setError(true);
+        setShowLinks(false);
+      } else {
+        setError(false);
+        setShowLinks(true);
+      }
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setZipcode(e.target.value);
     setError(false);
-
-    if (e.target.value.length !== 0) {
-      // regex for US zip code validation ZIP+4 (12345-5645)
-      const isValid = /(^\d{5}$)|(^\d{5}-\d{4}$)/.test(e.target.value);
-
-      if (!isValid) {
-        setError(true);
-      } else {
-        setError(false);
-      }
-    }
   };
+
   return (
     <div className="py-14  sm:pt-[142px] sm:pb-[90px] bg-white">
       <div className="container px-6 xl:px-[6.75rem] h-full sm:flex items-center sm:gap-10 lg:gap-[170px]">
@@ -57,7 +60,7 @@ const FindPhysician = () => {
                 )}
               />
               <button
-                type="button"
+                type="submit"
                 className="bg-[#E54F2E] active:scale-95 leading-[19px] active:shadow-lg active:bg-orange-600 duration-50 ease-in-out text-white font-grozen-medical text-lg font-semibold tracking-[0.45px] px-6 py-4 rounded"
               >
                 GO
@@ -68,29 +71,33 @@ const FindPhysician = () => {
             </p>
           </form>
 
-          <div className="bg-[#F8F3F1] rounded p-3 mt-7">
-            <p className="font-medium">
-              {primaryPhysician.linkText1}
-              <a
-                href={primaryPhysician.link1}
-                className="text-[#E54F2E] underline underline-offset-2"
-              >
-                Go to Website
-              </a>
-            </p>
-          </div>
+          {showLinks && (
+            <>
+              <div className="bg-[#F8F3F1] rounded p-3 mt-7">
+                <p className="font-medium">
+                  {primaryPhysician.linkText1}
+                  <a
+                    href={primaryPhysician.link1}
+                    className="text-[#E54F2E] underline underline-offset-2"
+                  >
+                    Go to Website
+                  </a>
+                </p>
+              </div>
 
-          <div className="bg-[#F8F3F1] rounded p-3 mt-2">
-            <p className="font-medium">
-              {primaryPhysician.linkText2}
-              <a
-                href={primaryPhysician.link2}
-                className="text-[#E54F2E] underline underline-offset-2"
-              >
-                Go to Website
-              </a>
-            </p>
-          </div>
+              <div className="bg-[#F8F3F1] rounded p-3 mt-2">
+                <p className="font-medium">
+                  {primaryPhysician.linkText2}
+                  <a
+                    href={primaryPhysician.link2}
+                    className="text-[#E54F2E] underline underline-offset-2"
+                  >
+                    Go to Website
+                  </a>
+                </p>
+              </div>
+            </>
+          )}
         </div>
 
         <div className="flex-1 grid grid-cols-3 grid-row-5 mt-14 sm:mt-0 sm:absolute md:relative sm:translate-x-56 md:translate-x-0 sm:right-0">
