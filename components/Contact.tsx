@@ -17,29 +17,54 @@ const Contact = () => {
       className="mx-6 min-[1440px]:container relative rounded-3xl px-8 sm:px-[55px] pt-[46px] sm:pb-6 lg:p-[105px] mt-[5.5rem] lg:mt-[7.5rem] bg-gradient-to-r from-[#151B2B] via-[#151B2B] to-[#E54F2E] sm:flex items-center justify-end"
     >
       <div className="sm:w-1/2 flex flex-col items-center sm:items-start">
-        <h4 className="font-grozen-medical text-center sm:text-start text-white font-bold text-[32px] sm:text-[40px] leading-[100%]">
+        <motion.h4
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{
+            y: 0,
+            opacity: 1,
+            transition: { delay: 1, duration: 0.75, type: "tween" },
+          }}
+          viewport={{ once: true }}
+          className="font-grozen-medical text-center sm:text-start text-white font-bold text-[32px] sm:text-[40px] leading-[100%]"
+        >
           {contact.title}
-        </h4>
+        </motion.h4>
 
-        <p className="text-lg text-white text-center sm:text-start mt-6">
+        <motion.p
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{
+            y: 0,
+            opacity: 1,
+            transition: { delay: 1.5, duration: 0.75, type: "tween" },
+          }}
+          viewport={{ once: true }}
+          className="text-lg text-white text-center sm:text-start mt-6"
+        >
           {contact.subtitle}
-        </p>
+        </motion.p>
 
-        <a
+        <motion.a
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{
+            y: 0,
+            opacity: 1,
+            transition: { delay: 2, duration: 0.75, type: "tween" },
+          }}
+          viewport={{ once: true }}
           href={contact.contactEmail}
           role="button"
           className="bg-[#E54F2E] mt-10 z-10 relative text-white text-lg leading-[19.8px] font-grozen-medical font-medium p-6 rounded-lg active:scale-95 active:bg-orange-600 ease-in-out duration-100"
         >
           CONTACT US
-        </a>
+        </motion.a>
       </div>
 
       <motion.img
-        initial={{ opacity: 0, scale: 0, transformOrigin: "bottom" }}
+        initial={{ opacity: 0 }}
         whileInView={{
+          // x: 0,
           opacity: 1,
-          scale: 1,
-          transition: { duration: 1, type: "tween" },
+          transition: { duration: 0.9, type: "tween" },
         }}
         viewport={{ once: true }}
         src={contact.image}
