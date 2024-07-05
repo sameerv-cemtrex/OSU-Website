@@ -33,3 +33,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ## Learn More
 
 This project uses two fonts "Grozen Medical" and "Aeonik", you can find these in the fonts folder.
+
+## Data and Copy Changes
+
+This project has the data and copy being stored in the `app/data.ts` file. This file contains JSON objects for data related to each section seperately. Just changing the data or copy here, can be reflected in the site UI. It is adviced to make changes here too, when adding or updating the site content. Keeping track of this file will help other people to make changes easily too.
